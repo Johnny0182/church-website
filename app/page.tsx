@@ -125,7 +125,7 @@ export default function Home() {
           </div>
           <p className="mt-8 text-sm font-semibold uppercase tracking-[0.15em] text-white/90">Kids ministry available</p>
           <p className="mt-6 text-xl font-bold uppercase tracking-[0.08em]">1247 Sunset Blvd, Los Angeles, CA 90026</p>
-          <button type="button" disabled className={disabledClass + ' mt-8 border-white bg-white text-slate-700'}>
+          <button type="button" disabled className={disabledClass + ' mt-8 border-white bg-white text-black'}>
             Get Directions
           </button>
         </div>
