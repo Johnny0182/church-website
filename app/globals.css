@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.script-style {
+  font-family: 'Segoe Script', 'Brush Script MT', 'Apple Chancery', cursive;
+}
+
+.diagonal-divider {
+  position: relative;
+}
+
+.diagonal-divider::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 80px;
+  background: linear-gradient(to bottom right, transparent 48%, #f5ecd9 49%);
+  pointer-events: none;
+}
+
+.diagonal-divider-alt {
+  position: relative;
+}
+
+.diagonal-divider-alt::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 70px;
+  background: linear-gradient(to bottom left, transparent 48%, #dce5f0 49%);
+  pointer-events: none;
+}
