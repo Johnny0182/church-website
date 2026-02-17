@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const navItems = ['Welcome', 'Communities', 'Serve', 'Events', 'Give', 'Kids Check-In Alerts'];
 
 const ministries = [
@@ -100,9 +102,15 @@ export default function Home() {
           </div>
 
           <div className="rounded-3xl border-2 border-dashed border-steel-300 bg-white/60 p-6 shadow-glow backdrop-blur">
-            {/* Swap this placeholder with a real hero image later by replacing this div with Next.js <Image /> */}
-            <div className="flex h-[360px] items-center justify-center rounded-2xl border border-steel-200 bg-gradient-to-b from-white to-steel-50 text-center">
-              <span className="text-sm font-semibold uppercase tracking-[0.18em] text-steel-700">Hero image placeholder</span>
+            <div className="relative h-[360px] overflow-hidden rounded-2xl border border-steel-200">
+              <Image
+                src="/church.jpg"
+                alt="Church congregation gathering in worship"
+                fill
+                priority
+                unoptimized
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
